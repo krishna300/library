@@ -15,7 +15,7 @@ const Featured = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
             {filtered.filter(newsItem => newsItem.featured).map(newsItem => { 
                 return (
-                    <div className='w-[25vw] bg-white m-2 p-4 flex gap-2'>
+                    <div className='min-w-[25vw] bg-white m-2 p-4 flex gap-2'>
                         <div className='flex justify-center items-center'>
                             <IoPieChartOutline size={70} color='gray'/>
                         </div>
@@ -37,7 +37,7 @@ const Featured = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-2'>
             {filtered.filter(newsItem => newsItem.trending).map(newsItem => { 
                 return (
-                    <div className='w-[25vw] bg-white m-2 p-4 flex gap-2'>
+                    <div className='min-w-[25vw] bg-white m-2 p-4 flex gap-2'>
                         <div className='flex justify-center items-center'>
                             <IoPieChartOutline size={70} color='gray'/>
                         </div>
